@@ -1,0 +1,6 @@
+FROM centos
+WORKDIR /tmp
+RUN echo "Hi vamsi" > /tmp/abhifile
+ENV myname abhi
+COPY vamsifile /tmp
+ADD demo.tar.gz /tmp
